@@ -1,6 +1,7 @@
 # Web English → Anki
 
 웹페이지에서 영어 단어/표현/문장을 드래그한 뒤 단축키를 누르면, LLM으로 Anki 카드 내용을 생성하고 TTS로 발음을 들려준 뒤 Anki에 자동 저장하는 Chrome 확장 프로그램입니다.
+<img width="1526" height="1337" alt="image" src="https://github.com/user-attachments/assets/e5074513-86da-4690-b968-45d5afee45b0" />
 
 ## 주요 기능
 
