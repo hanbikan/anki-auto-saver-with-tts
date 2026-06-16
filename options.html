@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Economist to Anki Settings</title>
+    <style>
+      body {
+        padding: 20px;
+        font-family: Arial, sans-serif;
+        max-width: 720px;
+      }
+      label {
+        display: block;
+        font-weight: 700;
+        margin-top: 14px;
+      }
+      input, textarea {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 8px;
+        margin-top: 4px;
+      }
+      button {
+        margin-top: 16px;
+        padding: 10px 16px;
+      }
+      #status {
+        margin-top: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Economist to Anki Settings</h2>
+
+    <label>Gemini API Key</label>
+    <input id="geminiApiKey" type="password" />
+
+    <label>Gemini Model</label>
+    <input id="modelName" placeholder="gemini-2.5-flash" />
+    <p style="margin: 4px 0 0; font-size: 13px; color: #666;">
+      Gemini API 모델명만 사용하세요. 예: gemini-2.5-flash, gemini-2.0-flash
+    </p>
+
+    <div>ElevenLabs API Key</div>
+    <input id="elevenLabsApiKey" type="password" style="width: 420px;" />
+
+    <div>ElevenLabs Voice ID</div>
+    <input id="elevenLabsVoiceId" value="Gfpl8Yo74Is0W6cPUWWT" style="width: 420px;" />
+
+    <div>ElevenLabs Model ID</div>
+    <input id="elevenLabsModelId" value="eleven_multilingual_v2" style="width: 420px;" />
+
+    <label>Anki Deck Name</label>
+    <input id="deckName" placeholder="Default" />
+
+    <label>Anki Note Type</label>
+    <input id="modelNameForAnki" placeholder="Basic" />
+
+    <label>Tags</label>
+    <input id="tags" placeholder="economist llm" />
+
+    <label>Prompt Style</label>
+    <textarea id="promptStyle" rows="3" placeholder="economist"></textarea>
+
+    <button id="save">Save</button>
+    <button id="openShortcuts" type="button">단축키 설정 열기</button>
+    <p style="margin-top: 16px; font-size: 14px; color: #555;">
+      처음 설치하거나 Load unpacked로 다시 로드한 뒤에는
+      <strong>Ctrl+Shift+S</strong> 단축키를 수동으로 지정해야 할 수 있습니다.
+      위 버튼으로 Chrome 단축키 설정 페이지를 열고
+      &quot;Capture selected sentence&quot;에 원하는 키를 지정하세요.
+    </p>
+    <div id="status"></div>
+
+    <script src="options.js"></script>
+  </body>
+</html>

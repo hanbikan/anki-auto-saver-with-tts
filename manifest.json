@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "Economist to Anki",
+  "version": "0.1.0",
+  "description": "Capture selected English sentences, generate Korean study notes with an LLM, and save to Anki.",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["content.css"]
+    }
+  ],
+  "host_permissions": [
+    "http://localhost:8765/*",
+    "http://127.0.0.1:8765/*",
+    "https://generativelanguage.googleapis.com/*",
+    "https://api.elevenlabs.io/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Economist to Anki"
+  },
+  "commands": {
+    "capture-selection": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+S",
+        "mac": "Command+Shift+S"
+      },
+      "description": "Capture selected sentence"
+    }
+  },
+  "options_page": "options.html"
+}

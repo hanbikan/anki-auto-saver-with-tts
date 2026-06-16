@@ -1,0 +1,73 @@
+#economist-anki-panel {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  width: 560px;
+  max-height: 82vh;
+  z-index: 2147483647;
+  background: #fff;
+  color: #111;
+  border: 1px solid #ddd;
+  border-radius: 14px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.22);
+  padding: 14px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+#economist-anki-panel .ea-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+#economist-anki-panel #ea-close {
+  width: 28px;
+  height: 28px;
+  border: none;
+  background: #eee;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#economist-anki-panel .ea-label {
+  font-weight: 700;
+  margin: 10px 0 4px;
+}
+
+#economist-anki-panel textarea {
+  width: 100%;
+  box-sizing: border-box;
+  resize: vertical;
+  padding: 8px;
+  line-height: 1.45;
+  font-size: 14px;
+}
+
+#economist-anki-panel #ea-front {
+  height: 110px;
+}
+
+#economist-anki-panel #ea-back {
+  height: 300px;
+}
+
+#economist-anki-panel .ea-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+#economist-anki-panel button {
+  flex: 1;
+  height: 36px;
+  cursor: pointer;
+}
+
+#economist-anki-panel #ea-status {
+  white-space: pre-wrap;
+  margin-top: 8px;
+  font-size: 13px;
+}
